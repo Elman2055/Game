@@ -1,0 +1,28 @@
+.closed {
+  width: 80px;
+  height: 80px;
+  background-color: rgb(180, 80, 26);
+  cursor: pointer;
+  border-radius: 15px;
+  transition: transform 0.8s ease;
+}
+
+.open {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.closed:hover {
+  transform: scale(1.1);
+}
+
+p {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(180, 80, 26);
+  user-select: none;
+}

@@ -1,0 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+body {
+  background-color: #F5E6C1;
+}
