@@ -30,7 +30,7 @@ const GameContainer = () => {
       setMeaning(copy);
       setCounter((prevCounter) => prevCounter + 1);
     }
-    if (counter === 4) {
+    if (counter === 2) {
       setShowModal(true);
     }
   };

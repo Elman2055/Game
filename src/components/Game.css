@@ -26,3 +26,20 @@ p {
   color: rgb(180, 80, 26);
   user-select: none;
 }
+
+@media only screen and (max-width: 450px) {
+  .closed {
+    width: 35px;
+    height: 35px;
+  }
+
+  .open {
+    width: 35px;
+    height: 35px;
+  }
+
+  p {
+    height: 35px;
+    font-size: 7px;
+  }
+}
