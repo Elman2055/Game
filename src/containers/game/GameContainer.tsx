@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Game from "../../components/Game";
 import "./GameContainer.css";
 import data from "./GameContainer.data";

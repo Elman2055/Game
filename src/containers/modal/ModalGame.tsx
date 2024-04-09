@@ -1,4 +1,3 @@
-import React from "react";
 import "./ModalGame.css";
 
 type TModal = {
