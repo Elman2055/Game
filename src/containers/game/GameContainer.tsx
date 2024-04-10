@@ -19,7 +19,7 @@ const GameContainer = () => {
   const RandomMeaning = () => {
     const random = Math.floor(Math.random() * meaning.length);
     const copyMeaning = [...meaning];
-    copyMeaning[random] = { ...copyMeaning[random], meaning: "Артем лох" };
+    copyMeaning[random] = { ...copyMeaning[random], meaning: "O" };
     setMeaning(copyMeaning);
   };
 
@@ -30,7 +30,7 @@ const GameContainer = () => {
       setMeaning(copy);
       setCounter((prevCounter) => prevCounter + 1);
     }
-    if (counter === 2) {
+    if (copy[index].meaning === "O") {
       setShowModal(true);
     }
   };
@@ -53,10 +53,6 @@ const GameContainer = () => {
     RandomMeaning();
   }, []);
 
-  const OnModal = () => {
-    setShowModal(false);
-  }
-
   return (
     <div className={"GameContainer"}>
       <div className="meaningContainer">
@@ -75,7 +71,7 @@ const GameContainer = () => {
           Reset
         </button>
       </div>
-      {showModal && <ModalGame OnModal={OnModal}/>}
+      {showModal && <ModalGame OnModal={OnReset}/>}
     </div>
   );
 };
